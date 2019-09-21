@@ -1,47 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:id="@+id/relativeLayout"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             tools:context=".MainActivity">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        tools:context=".Main2Activity">
 
 
-    <Button
-            android:id="@+id/rButton"
-            android:text="Right"
-            android:textSize="25dp"
-            android:layout_width="0dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" app:layout_constraintWidth_percent="0.47"/>
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-            android:text="Right" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"/>
-    <Button
-            android:id="@+id/lButton"
-            android:text="Left"
-            android:textSize="25dp"
-            android:layout_width="0dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" app:layout_constraintWidth_percent="0.47"/>
-            android:layout_constraintWidth_percent="50"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" android:text="Left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.539"/>
-</android.support.constraint.ConstraintLayout>
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_weight="1" android:text="YOU WIN!"
+            android:textSize="30sp"
+    />
+</LinearLayout>
