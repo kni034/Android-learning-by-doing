@@ -10,29 +10,68 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+        <TextView
+                android:layout_width="300dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/IntroString"
+        />
+
         <EditText
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:hint="Name a drink!"
         />
 
-
-        <SeekBar
-                android:layout_width="150dp"
-                android:layout_height="20dp"
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/seekBar"
-        />
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of verses: "
+            />
+
+            <SeekBar
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:max="99"
+                    android:min="1"
+                    android:id="@+id/seekBar"
+            />
+
+            <TextView
+                    android:id="@+id/number_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_verses"
+            />
+
+        </LinearLayout>
 
         <Button
                 android:id="@+id/generate_button"
+                android:padding="10dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Generate Song!">
         </Button>
+
+        <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                
+        />
 
     </LinearLayout>
 </ScrollView>

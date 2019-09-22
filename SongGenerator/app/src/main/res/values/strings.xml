@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Song Generator</string>
+    <string name="num_verses">1</string>
+    <string name="IntroString">This is an app where you can generate a song just by writing you favorite type of drink
+        and choosing how many verses you want the song to be, ENJOY!
+    </string>
 </resources>
