@@ -8,7 +8,8 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
 
         <TextView
                 android:layout_width="300dp"
@@ -19,6 +20,7 @@
         />
 
         <EditText
+                android:id="@+id/drink_text"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
@@ -67,10 +69,10 @@
         </Button>
 
         <TextView
+                android:id="@+id/song_View"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                
         />
 
     </LinearLayout>
